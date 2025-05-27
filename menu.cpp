@@ -2,7 +2,7 @@
 #include <conio.h>
 using namespace std;
 
-int data[6];
+int data1[6];
 int jumlahData = 6;
 void dMenu()
 {
@@ -22,8 +22,8 @@ void Memasukandata()
   cout << "===============\n";
   for (int i = 0; i < jumlahData; i++)
   {
-    cout <<  << i + 1 << ": ";
-    cin >> data[i];
+    cout << i + 1 << ": ";
+    cin >> data1[i];
   }
   getch();
 }
@@ -35,12 +35,12 @@ void Menampilkandata()
   cout << "===================\n";
   for (int i = 0; i < jumlahData; i++)
   {
-    cout <<  << i + 1 << ": " << data[i] << "\n";
+    cout << i + 1 << ": " << data1[i] << "\n";
   }
   getch();
 }
 
-void Sorting(string pesan)
+void Sorting()
 {
   system("cls");
   cout << "PROSES SORTING\n";
@@ -50,11 +50,11 @@ void Sorting(string pesan)
   {
     for (int j = i + 1; j < jumlahData; j++)
     {
-      if (data[i] < data[j])
+      if (data1[i] < data1[j])
       {
-        int temp = data[i];
-        data[i] = data[j];
-        data[j] = temp;
+        int temp = data1[i];
+        data1[i] = data1[j];
+        data1[j] = temp;
       }
     }
   }
