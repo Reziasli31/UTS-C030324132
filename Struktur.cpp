@@ -12,8 +12,8 @@ struct mahasiswa
 int main()
 {
     mahasiswa Rezi;
-    Rezi.NIM = "c030324132";
-    Rezi.NAMA = "Muhammad Fachrezi";
+    Rezi.nim = "c030324132";
+    Rezi.nama = "Muhammad Fachrezi";
     Rezi.alamat = "Jalan HKSN, AMD Permai";
     Rezi.ipk = 3.7;
 
